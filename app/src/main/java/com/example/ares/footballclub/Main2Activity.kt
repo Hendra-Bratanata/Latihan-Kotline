@@ -22,6 +22,7 @@ class Main2Activity : AppCompatActivity() {
 
         val ID_name = 2
         val ID_GBR = 1
+        val ID_Info = 3
         relativeLayout{
             padding = dip(16)
 
@@ -37,7 +38,9 @@ class Main2Activity : AppCompatActivity() {
                 below(ID_GBR)
                 centerHorizontally() }
 
-            nameInfo =  textView().lparams( width= wrapContent){
+            nameInfo =  textView {
+                id=ID_Info
+            }.lparams( width= wrapContent){
                 below(ID_name)
                 topMargin = dip(10)
 
